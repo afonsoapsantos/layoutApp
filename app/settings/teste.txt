@@ -1,0 +1,29 @@
+//$container = new Container();
+
+// Set container to create App with on AppFactory
+AppFactory::setContainer($container);
+
+
+
+$dependencies = require __DIR__.'/../app/dependencies.php';
+$dependencies($container);
+//
+// $container->set('settings', function(){
+//     return [
+//         'settings' => [
+//             // Slim Settings
+//             'determineRouteBeforeAppMiddleware' => false,
+//             'displayErrorDetails' => true,
+//             'db' => [
+//                 'driver' => 'mysql',
+//                 'host' => 'localhost',
+//                 'database' => 'layout',
+//                 'username' => 'root',
+//                 'password' => '',
+//                 'charset'   => 'utf8',
+//                 'collation' => 'utf8_unicode_ci',
+//                 'prefix'    => '',
+//             ]
+//         ],
+//     ];
+// });
