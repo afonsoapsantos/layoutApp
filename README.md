@@ -6,7 +6,7 @@ Tabela de conteúdos
 =================
 <!--ts-->
    * [Instalação](#Instalação)
-   * [Instalação](#instalacao)
+   * [Ferramentas](#Ferramentas)
    * [Comandos](#comandos)
    * [Tests](#testes)
    * [Tecnologias](#tecnologias)
@@ -22,9 +22,16 @@ Tabela de conteúdos
     * slim/twig-view
     * php-di/php-di
 
+### Ferramentas
+
+* Xampp
+* Mysql
+* Apache
+
+
 # comandos
  <p>Para Iniciar a aplicação</p>
- - php -S localhost -t public
+    - php -S localhost -t public
 
 <h4 align="center"> 
 	🚧 Em construção...  🚧
