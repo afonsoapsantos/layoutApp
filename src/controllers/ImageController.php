@@ -14,13 +14,14 @@ class ImageController extends Base
         $this->container = $container;
     }
 
-    public function get()
+    public function get($request, $response)
     {   
-        $pdo = DB::connection()->get;
-        var_dump($pdo);
-        die();
-        $img = Image::all();
-        var_dump($img);
+        $all = Image::all();
+
+        return $this->getTwig()->render($response, $this->setView('site/images'), [
+            "titlePage" => 'Images',
+            "all" => $all
+          ]); 
     }
 }
 

@@ -14,27 +14,34 @@ $container = new Container();
 $settings = require __DIR__.'/../app/settings/settings.php';
 $settings($container);
 
-$eloquent = require __DIR__.'/../app/settings/eloquent.php';
-$eloquent($container);
-
 $dependencies = require __DIR__.'/../app/dependencies.php';
 $dependencies($container);
-
-$eloquent = $container->get('eloquent');
-
-$eloquent = function ($eloquent) {
-    $capsule = new \Illuminate\Database\Capsule\Manager;
-    $capsule->addConnection($eloquent['db']);
-
-    $capsule->setAsGlobal();
-    $capsule->bootEloquent();
-
-    return $capsule;
-};
 
 AppFactory::setContainer($container);
 $app = AppFactory::create();
 $callableResolver = $app->getCallableResolver();
+
+$container->set('eloquent', function(){
+    return [
+        'db' => [
+            'driver' => 'mysql',
+            'host' => 'localhost',
+            'database' => 'layoutapp',
+            'username' => 'root',
+            'password' => '',
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
+        ]
+    ];
+});
+
+$eloquent = $container->get('eloquent')['db'];
+
+$capsule = new \Illuminate\Database\Capsule\Manager;
+$capsule->addConnection($eloquent);
+$capsule->setAsGlobal();
+$capsule->bootEloquent();
 
 //Routes
 $rsite = require __DIR__.'/../app/routes/site.php';
@@ -46,7 +53,7 @@ $displayErrorDetails = $settings['displayErrorDetails'];
 $logError = $settings['logError'];
 $logErrorDetails = $settings['logErrorDetails'];
 
-// Add Routing Middleware
+//Add Routing Middleware
 $app->addRoutingMiddleware();
 
 // Add Error Middleware
