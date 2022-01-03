@@ -83,20 +83,19 @@ nav {
 }
     
 .divider {
-    background-color: gray;
+    background-color: rgba(130, 130, 130, 0.2);
     min-width:100%;
     height: 2px;
 }
 
 .container-middle {
-    min-height: 65vh;
+    min-height: 100%;
     min-width: 100%;
 }
 
 .container-middle .item {
     display: flex;
     gap: 20px;
-    flex-direction: row;
     flex-wrap: wrap;
     min-height: 100%;
 
@@ -109,6 +108,10 @@ nav {
     height: 160px;
 
     margin: 20px auto;
+}
+
+.container-middle .item .box p, .container-middle .item .box img {
+    margin: 0;
 }
 
 .container-middle .item .item-text {
@@ -135,6 +138,7 @@ nav {
     height: 65%;
     object-fit: fill;
     margin-top: -0.7px;
+    border-radius: 10px;
 }
 
 .footer-container {
