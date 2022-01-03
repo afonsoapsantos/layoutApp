@@ -16,11 +16,11 @@ class ImageController extends Base
 
     public function get($request, $response)
     {   
-        $all = Image::all();
+        $images = Image::all();
 
         return $this->getTwig()->render($response, $this->setView('site/images'), [
             "titlePage" => 'Images',
-            "all" => $all
+            "items" => $images
           ]); 
     }
 }

@@ -2,7 +2,15 @@
 {% block content %}
 
 <div class="container-middle">
-    
+    <div class="item">
+        {% for item in items %}
+            <img src=" {{ item.imagePath }} " alt="">
+            <div class="item-text">
+                <p> {{ item.name }} </p>
+                <span> {{ item.description }} </span>
+            </div>
+        {% endfor %}
+    </div>
 </div>
 
 {% endblock %}
