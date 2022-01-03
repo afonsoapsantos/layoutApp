@@ -1,37 +1,28 @@
-# Layout Simples
+# Layout Simples para Teste
 ## Layout desenvolvido para teste
 <p align="center">Layout Desenvolvido utilizando slim framework, css, html e com eloquent ORM</p>
 
-Tabela de conteúdos
-=================
-<!--ts-->
-   * [Instalação](#Instalação)
-   * [Ferramentas](#Ferramentas)
-   * [Comandos](#comandos)
-   * [Tests](#testes)
-   * [Tecnologias](#tecnologias)
-<!--te-->
-
 ### Instalação
 
-    # Ferramentas necessárias
+<!-- ts -->
+ * Clonar repositório
+ * Entrar na raiz no projeto
+ * Executar o comando composer install para instalar dependencias
+ * Necessário Xampp
+ * Base dados em MySQL
+ * Executar script do banco de dados
+ * Alterar conexão do banco se diferente
+ * Para executar digite comando
+    - php -S localhost:PORT -t public
+    * Em PORT colocar porta desejada
+ <!-- te -->
 
+### Tecnologias usadas
     * Slim Framework
     * Illuminate/database
     * slim/psr7
     * slim/twig-view
     * php-di/php-di
-
-### Ferramentas
-
-* Xampp
-* Mysql
-* Apache
-
-
-# comandos
- <p>Para Iniciar a aplicação</p>
-    - php -S localhost -t public
 
 <h4 align="center"> 
 	🚧 Em construção...  🚧
