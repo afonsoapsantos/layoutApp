@@ -8,7 +8,6 @@ use Src\models\Bootstrap;
 
 return function(App $app) {
 
-        $app->get('/', HomeController::class.':index');
-        $app->get('/images', ImageController::class.':get');
+        $app->get('/', ImageController::class.':get');
     }
 ?>  

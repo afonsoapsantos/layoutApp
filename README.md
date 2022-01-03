@@ -6,7 +6,7 @@
  * Clonar repositório
  * Entrar na raiz no projeto
  * Executar o comando composer install para instalar dependencias - Necesário ter o Composer instalado
- * Necessário Xampp
+ * Necessário Xampp ou MySql
  * Base dados em MySQL
  * Executar script do banco de dados
  * Alterar conexão do banco se diferente
@@ -15,7 +15,7 @@
  * 
  <!-- te -->
 
-#### Tecnologias usadas
+#### Tecnologias
 
 <!-- ts -->
 * Slim Framework

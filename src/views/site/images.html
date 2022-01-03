@@ -4,10 +4,12 @@
 <div class="container-middle">
     <div class="item">
         {% for item in items %}
-            <img src=" {{ item.imagePath }} " alt="">
-            <div class="item-text">
-                <p> {{ item.name }} </p>
-                <span> {{ item.description }} </span>
+            <div class="box">
+                <img src=" {{ item.imagePath }} " alt="">
+                <div class="item-text">
+                    <p> {{ item.name }} </p>
+                    <span> {{ item.description }} </span>
+                </div>
             </div>
         {% endfor %}
     </div>
