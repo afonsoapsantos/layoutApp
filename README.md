@@ -2,7 +2,7 @@
 ## Layout desenvolvido para teste
 <p align="center">Layout Desenvolvido utilizando slim framework, css, html e com eloquent ORM</p>
 
-### Instalação
+#### Instalação
 
 <!-- ts -->
  * Clonar repositório
@@ -17,13 +17,14 @@
     * Em PORT colocar porta desejada
  <!-- te -->
 
-### Tecnologias usadas
+#### Tecnologias usadas
+<!-- ts -->
     * Slim Framework
     * Illuminate/database
     * slim/psr7
     * slim/twig-view
     * php-di/php-di
-
+ <!-- te -->
 <h4 align="center"> 
 	🚧 Em construção...  🚧
 </h4>
