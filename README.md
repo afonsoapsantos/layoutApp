@@ -1,17 +1,13 @@
-# Layout para teste
+# Layout Simples
 ## Layout desenvolvido para teste
-<p align="center">reproduzir o layout em anexo, utilizando html + css + Slim Framework. 
-    As informações, com exceção das fotos,
-	  devem vir de um banco de dados MySQL / MariaDB, de preferência 
-	   utilizando o ORM Eloquent para lidar com o banco de dados</p>
+<p align="center">Layout Desenvolvido utilizando slim framework, css, html e com eloquent ORM</p>
 
 Tabela de conteúdos
 =================
 <!--ts-->
    * [Instalação](#Instalação)
-   * [Tabela de Conteudo](#tabela-de-conteudo)
    * [Instalação](#instalacao)
-   * [Como usar](#como-usar)
+   * [Comandos](#comandos)
    * [Tests](#testes)
    * [Tecnologias](#tecnologias)
 <!--te-->
@@ -25,3 +21,11 @@ Tabela de conteúdos
     * slim/psr7
     * slim/twig-view
     * php-di/php-di
+
+# comandos
+    - para iniciar a aplicação php -S localhost -t public
+
+
+<h4 align="center"> 
+	🚧 Em construção...  🚧
+</h4>
