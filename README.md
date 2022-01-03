@@ -18,6 +18,7 @@
  <!-- te -->
 
 #### Tecnologias usadas
+
 <!-- ts -->
     * Slim Framework
     * Illuminate/database
@@ -25,6 +26,7 @@
     * slim/twig-view
     * php-di/php-di
  <!-- te -->
+ 
 <h4 align="center"> 
 	🚧 Em construção...  🚧
 </h4>
