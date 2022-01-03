@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 03-Jan-2022 às 05:01
+-- Tempo de geração: 04-Jan-2022 às 00:40
 -- Versão do servidor: 10.4.18-MariaDB
 -- versão do PHP: 8.0.3
 
@@ -41,7 +41,16 @@ CREATE TABLE `image` (
 --
 
 INSERT INTO `image` (`id`, `name`, `description`, `imagePath`, `createdat`, `updateat`) VALUES
-(1, 'Cores de Outono', 'cores frias e quentes de outono', './resources/User.png', '2022-01-03', NULL);
+(1, 'Cores de Outono', 'cores frias e quentes de outono', './resources/User.png', '2022-01-03', NULL),
+(2, 'Cores de Verão', 'Cores para escolher', './resources/logoRGB.png', '2022-01-03', NULL),
+(3, 'Cores de Verão', 'Cores para escolher', './resources/User.png', '2022-01-03', NULL),
+(4, 'Cores de Verão', 'Cores para escolher', './resources/User.png', '2022-01-03', NULL),
+(5, 'Cores de Verão', 'Cores para escolher', './resources/User.png', '2022-01-03', NULL),
+(6, 'Cores de Verão', 'Cores para escolher', './resources/User.png', '2022-01-03', NULL),
+(7, 'Cores de Verão', 'Cores para escolher', './resources/User.png', '2022-01-03', NULL),
+(8, 'Cores de Verão', 'Cores para escolher', './resources/User.png', '2022-01-03', NULL),
+(9, 'Cores de Verão', 'Cores para escolher', './resources/User.png', '2022-01-03', NULL),
+(10, 'Cores de Verão', 'Cores para escolher', './resources/User.png', '2022-01-03', NULL);
 
 -- --------------------------------------------------------
 
@@ -88,7 +97,7 @@ ALTER TABLE `phinxlog`
 -- AUTO_INCREMENT de tabela `image`
 --
 ALTER TABLE `image`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
