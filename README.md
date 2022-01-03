@@ -17,7 +17,9 @@ Tabela de conteúdos
 <!--te-->
 
 ### Instalação
-    <h1>Itens necesários</h1>
+
+    # Ferramentas necessárias
+
     * Slim Framework
     * Illuminate/database
     * slim/psr7
