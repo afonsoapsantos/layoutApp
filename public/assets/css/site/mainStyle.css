@@ -84,7 +84,8 @@ nav {
 }
 
 .container-middle {
-    display: flex;
+    min-height: 65vh;
+    min-width: 100%;
 }
 
 .container-middle .item {
@@ -99,9 +100,10 @@ nav {
 }
 
 .container-middle .item .box {
-    width: 180px;
-    height: 180px;
-    background-color: aliceblue;
+    width: 160px;
+    height: 160px;
+
+    margin: 10px;
 }
 
 .container-middle .item .item-text {
@@ -111,7 +113,9 @@ nav {
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    color: #aaa;
+    color: rgb(70, 70, 70);
+
+    margin-top: 0 auto;
 }
 
 .container-middle .item .item-text p {

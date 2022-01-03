@@ -6,10 +6,8 @@
         {% for item in items %}
             <div class="box">
                 <img src=" {{ item.imagePath }} " alt="">
-                <div class="item-text">
-                    <p> {{ item.name }} </p>
-                    <span> {{ item.description }} </span>
-                </div>
+                <p> {{ item.name }} - {{ item.description }} </p>
+                <div class="divider"></div>
             </div>
         {% endfor %}
     </div>

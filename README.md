@@ -12,7 +12,6 @@
  * Alterar conexão do banco se diferente
  * Para executar digite comando
     - php -S localhost:8080 -t public
- * 
  <!-- te -->
 
 #### Tecnologias
