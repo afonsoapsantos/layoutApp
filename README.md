@@ -1,6 +1,4 @@
 # Layout Simples para Teste
-## Layout desenvolvido para teste
-<p align="center">Layout Desenvolvido utilizando slim framework, css, html e com eloquent ORM</p>
 
 #### Instalação
 
