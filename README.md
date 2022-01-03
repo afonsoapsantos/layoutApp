@@ -23,8 +23,8 @@ Tabela de conteúdos
     * php-di/php-di
 
 # comandos
-    - para iniciar a aplicação php -S localhost -t public
-
+ <p>Para Iniciar a aplicação</p>
+ - php -S localhost -t public
 
 <h4 align="center"> 
 	🚧 Em construção...  🚧
