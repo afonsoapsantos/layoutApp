@@ -16,7 +16,8 @@
         "php": "^8.0",
         "monolog/monolog": "^2.3",
         "psr/log": "1.*",
-        "robmorgan/phinx": "^0.12.9"
+        "robmorgan/phinx": "^0.12.9",
+        "illuminate/pagination": "^8.77"
     },
     "autoload": {
         "psr-4": {

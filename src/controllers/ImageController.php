@@ -2,8 +2,8 @@
 namespace Src\controllers;
 
 use Src\models\Image;
-use Illuminate\Support\Facades\DB;
 use Psr\Container\ContainerInterface;
+use Illuminate\Pagination\Paginator;
 
 class ImageController extends Base
 {

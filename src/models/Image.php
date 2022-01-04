@@ -9,6 +9,8 @@ class Image  extends Model
     protected $fillable = ['name', 'description', 'imagePath'];
     protected $primaryKey = 'id';
     protected $dates = ['createdat', 'updatedat'];
+
+    protected $perPage = 10;
 }
 
 
