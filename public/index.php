@@ -25,7 +25,7 @@ $container->set('eloquent', function(){
     return [
         'db' => [
             'driver' => 'mysql',
-            'host' => 'localhost',
+            'host' => 'localhost', //layoutapp_db para ambiente docker
             'database' => 'layoutapp',
             'username' => 'root',
             'password' => '',

@@ -27,6 +27,9 @@ SET time_zone = "+00:00";
 -- Estrutura da tabela `image`
 --
 
+DROP TABLE IF EXISTS image;
+COMMIT;
+
 CREATE TABLE `image` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
@@ -117,6 +120,9 @@ INSERT INTO `image` (`id`, `name`, `description`, `imagePath`, `createdat`, `upd
 --
 -- Estrutura da tabela `phinxlog`
 --
+
+DROP TABLE IF EXISTS phinxlog;
+COMMIT;
 
 CREATE TABLE `phinxlog` (
   `version` bigint(20) NOT NULL,

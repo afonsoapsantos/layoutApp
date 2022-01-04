@@ -1,0 +1,43 @@
+version: '3.7'
+
+volumes:
+    logs:
+        driver: local
+
+services:
+    slim:
+        build:
+            context: .
+        image: myphp:1.0
+        working_dir: /var/www
+        command: php -S 0.0.0.0:8080 -t public
+        environment:
+            docker: "true"
+        ports:
+            - 8080:8080
+        volumes:
+            - .:/var/www
+            - logs:/var/www/logs
+
+    composer:
+        image: "composer"
+        volumes:
+            - ".:/app"
+        command: install
+
+    mysqldb:
+        image: mysql:${MYSQL_VERSION}
+        container_name: ${MYSQL_HOST}
+        restart: always
+        env_file:
+            - ".env"
+        environment:
+            - MYSQL_DATABASE=${MYSQL_DATABASE}
+            - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+            - MYSQL_USER=${MYSQL_USER}
+            - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+        ports:
+            - "8989:3306"
+        volumes:
+            - ".docker/data:/var/lib/mysql"
+            - "./layoutapp.sql:/docker-entrypoint-initdb.d/1.sql"

@@ -3,12 +3,15 @@
         <img src="./resources/logoRGB.png" alt="">
         <div class="content-menu">
             <div class="phone">(11) 98888 - 5231</div>
-
-            <nav>
-                <ul class="navigation">
-                    <li><a href="">Page 1</a></li>
-                </ul>
-            </nav>
+            {% if pagination.needed %}
+                <nav>
+                    <ul class="navigation">
+                        {% for i in 1..pagination.lastpage %}
+                        <li><a class="{% if i == pagination.page %}active{% endif %} item" href="?page={{ i }}">Página {{ i }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            {% endif %}
         </div>
     </div>
     <div class="divider"></div>

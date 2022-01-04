@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap');
+
 html, body {
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@ html, body {
     box-sizing: border-box;
     background-color: #e5e5e5;
     height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Spartan', Helvetica, sans-serif;
 }
 
 .container {
@@ -112,6 +114,9 @@ nav {
 
 .container-middle .item .box p, .container-middle .item .box img {
     margin: 0;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #626262;
 }
 
 .container-middle .item .item-text {
@@ -179,15 +184,18 @@ nav {
 .footer-container .up .foo-left .text {
     width: 65%;
     margin: 0 auto;
+    color: #626262;
 }
 
 .footer-container .up .foo-left .text h2 {
     font-size: 18px;
     text-align: left;
+    font-family: 'Spartan', Helvetica, sans-serif;
 }
 
 .footer-container .up .foo-left .text p {
-    font-size: 12px;
+    font-size: 12pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: left;
 }
 
@@ -198,12 +206,13 @@ nav {
     height: 50px;
     padding: 2px;
     justify-content: space-between;
-    color: rgb(50, 50, 50);
+    color: #626262;
     background-color: rgba(60, 60, 60, 0.2);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .footer-container .down p{
-    font-size: 14px;
+    font-size: 12pt;
     display: flex;
     margin: 0 4px;
     align-items: center;
